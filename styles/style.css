@@ -1,26 +1,62 @@
-body{
-  background-color:white;
+body {
+  background-color: white;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
 .top_manu {
+  font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
-  position: fixed;     /* 固定在页面顶部 */
+  position: fixed; /* Fixed at the top */
   top: 0;
   left: 0;
-  width: 100%;         /* 撑满整个横向宽度 */
+  width: 100%;
   background: black;
-  padding: 10px 20px;  /* 顶部和底部10px，左右20px */
+  padding: 20px; /* Reduced padding for better fit */
   margin: 0;
   list-style: none;
   display: flex;
+  justify-content: flex-end; /* Align items to the right */
   gap: 20px;
-  z-index: 999;        /* 确保不被其他内容覆盖 */
+  z-index: 999; /* Ensure it stays on top */
+  box-sizing: border-box; /* Include padding in width */
 }
 
-.title{
-  padding-top: 70px;         /* 避免被顶部菜单遮挡 */
-  margin: 0 auto;            /* 水平居中 */
-  max-width: 100%;         /* 设置最大宽度，避免太宽 */
-  width: 90%;                /* 宽度随浏览器自适应 */
-  box-sizing: border-box;    /* 包括 padding 在内计算宽度 */
+.name{
+  position: fixed; /* Fix position at top left */
+  top: -10px; /* Distance from top */
+  left: 100px; /* Distance from left */
+  color: rgb(255, 255, 255); /* Match your original text color */
+  font-size: 24px; /* Adjustable size */
+  font-family: 'Times New Roman', Times, serif; /* Match menu font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  z-index: 1000; /* Ensure it stays above top_manu */
+}
+
+.title {
+  padding-top: 80px; /* Adjust to avoid overlap with top_manu */
+  margin-left: 20px; /* Keep title on the left */
+  box-sizing: border-box;
+}
+
+/* Optional: Add media query for smaller screens */
+@media (max-width: 600px) {
+  .top_manu {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+  }
+
+  .name {
+    top: 10px;
+    left: 10px;
+    font-size: 20px; /* Reduce size for smaller screens */
+  }
+
+  .title {
+    padding-top: 100px; /* Adjust for smaller screens */
+    margin-left: 10px;
+  }
 }
