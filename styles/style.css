@@ -1,1 +1,26 @@
-/* this will be the decoration of my website */
+body{
+  background-color:white;
+}
+.top_manu {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  position: fixed;     /* 固定在页面顶部 */
+  top: 0;
+  left: 0;
+  width: 100%;         /* 撑满整个横向宽度 */
+  background: black;
+  padding: 10px 20px;  /* 顶部和底部10px，左右20px */
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  z-index: 999;        /* 确保不被其他内容覆盖 */
+}
+
+.title{
+  padding-top: 70px;         /* 避免被顶部菜单遮挡 */
+  margin: 0 auto;            /* 水平居中 */
+  max-width: 100%;         /* 设置最大宽度，避免太宽 */
+  width: 90%;                /* 宽度随浏览器自适应 */
+  box-sizing: border-box;    /* 包括 padding 在内计算宽度 */
+}
