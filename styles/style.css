@@ -57,7 +57,6 @@ body {
   z-index: 2; /* Ensure intro is above the image */
   font-family: 'Times New Roman', sans-serif; /* More modern font for professionalism */
   gap: 10px;
-
 }
 
 /* Optional: Add media query for smaller screens */
