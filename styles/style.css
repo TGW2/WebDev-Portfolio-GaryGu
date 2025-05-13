@@ -44,14 +44,15 @@ body {
   display: flex;
   align-items: center;     /* 垂直居中 */
   flex-direction: column;  /* 垂直排列内容 */
-  
 }
 
+
 .intro{
+  font-size: 20px;
+  padding: 0px 30px 10px 30px;
   width: 60%;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for fusion effect */
-  border: 1px 10px 10px 100px solid #bcbcbc; /* Darker border for professional look */
+  background-color:rgb(255, 248, 239);
+  border: 1px rgba(196, 82, 82, 0.9)cbcbc; /* Darker border for professional look */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
   text-align: center;
   z-index: 2; /* Ensure intro is above the image */
