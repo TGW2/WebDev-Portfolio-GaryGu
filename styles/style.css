@@ -45,6 +45,11 @@ body {
   align-items: center;     /* 垂直居中 */
   flex-direction: column;  /* 垂直排列内容 */
   background-color:rgb(255, 248, 239);
+  border: 1px solid #ccc; /* Subtle border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  max-width: 1200px; /* Limit width for a contained look */
+  margin: 0 auto; /* Center the title box horizontally */
+  overflow: hidden; /* Ensure the image doesn’t overflow */
 }
 
 
@@ -53,8 +58,8 @@ body {
   padding: 0px 30px 60px 30px;
   width: 60%;
   background-color:rgb(254, 242, 225);
-  border: 1px rgba(196, 82, 82, 0.9)cbcbc; /* Darker border for professional look */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+  /* border: 1px rgba(196, 82, 82, 0.9)cbcbc;  */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
   text-align: center;
   z-index: 2; /* Ensure intro is above the image */
   font-family: 'Times New Roman', sans-serif; /* More modern font for professionalism */
