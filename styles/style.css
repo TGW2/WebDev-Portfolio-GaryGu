@@ -36,6 +36,7 @@ body {
 }
 
 .title {
+  font-family: 'Times New Roman', Times, serif;
   padding-top: 80px; /* Adjust to avoid overlap with top_manu */
   margin-left: 20px; /* Keep title on the left */
   box-sizing: border-box;
@@ -64,6 +65,11 @@ body {
   z-index: 2; /* Ensure intro is above the image */
   font-family: 'Times New Roman', sans-serif; /* More modern font for professionalism */
   gap: 10px;
+}
+
+.title h1 img {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 /* Optional: Add media query for smaller screens */
