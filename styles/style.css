@@ -29,7 +29,7 @@ body {
   left: 100px; /* Distance from left */
   color: rgb(255, 255, 255); /* Match your original text color */
   font-size: 24px; /* Adjustable size */
-  font-family: 'Times New Roman', Times, serif; /* Match menu font */
+  font-family:'Times New Roman', Times, serif; /* Match menu font */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   z-index: 1000; /* Ensure it stays above top_manu */
