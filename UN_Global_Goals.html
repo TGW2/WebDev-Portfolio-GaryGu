@@ -6,86 +6,91 @@
     <script src="scripts/script.js"></script>
   </head>
   <body>
-    <div Class="name">
-      <p>GaryGu</p>
+    <div class="header">
+      <div class="name">
+        <p>GaryGu</p>
+      </div>
+      <ul class="top_manu">
+        <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
+        <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
+        <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
+        <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
+        <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
+      </ul>
     </div>
+    <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
 
-    <ul class="top_manu">
-      <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
-      <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
-      <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
-      <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
-      <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
-    </ul>
-    
-
-    <div class="title">
-      <h1 style="bottom: 10px;"><img src="images/UN_icon.jpg" alt="UN Global Goal #16" width="50" height="50" style="padding: 10px 0px 0px 0px; position: relative;margin-right: 10px;">UN Global Goals</h1>
-      
-        <div class="intro" style="padding: 20px">
-          <img src="images/UN_16.png" alt="UN Global #16" width="625" height="90" style="position: relative;">
-          <h2>Goal 16: Peace, Justice, and Strong Institutions</h2>
-          <p>Goal 16 is about promoting peaceful and inclusive societies, providing access to justice for all and building effective, accountable and inclusive institutions at all levels. People everywhere should be free of fear from all forms of violence and feel safe as they go about their lives whatever their ethnicity, faith or sexual orientation.</p>
+    <div class="hero-section">
+      <h1 class="hero-title"><img src="images/UN_icon.jpg" alt="UN Global Goal #16" width="50" height="50" style="vertical-align:middle;margin-right:10px;">UN Global Goals</h1>
+      <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
+    </div>
+    <div id="main-content-section" class="content-section">
+      <div class="intro" style="padding: 20px">
+        <img src="images/UN_16.png" alt="UN Global #16" width="625" height="90" style="position: relative;">
+        <h2>Goal 16: Peace, Justice, and Strong Institutions</h2>
+        <p>Goal 16 is about promoting peaceful and inclusive societies, providing access to justice for all and building effective, accountable and inclusive institutions at all levels. People everywhere should be free of fear from all forms of violence and feel safe as they go about their lives whatever their ethnicity, faith or sexual orientation.</p>
+      </div>
+      <div class="media-container" style=" margin: 0 80px 0 80px; padding: 0px 20px 0px 20px; gap: 80px; font-family: 'Times New Roman', Times, serif;color:rgb(87,86,85)">
+        <div class="media-block" >
+          <h2>Understanding SDG 16</h2>
+          <p style="font-size: 20px;">SDG 16 encompasses targets such as reducing all forms of violence, ending abuse and exploitation, promoting the rule of law, reducing corruption, and ensuring inclusive decision-making. It recognizes that without peace, development stalls; without justice, inequalities fester; and without strong institutions, trust in governance erodes. For instance, target 16.1 focuses on reducing violence, while 16.5 addresses corruption, and 16.7 emphasizes inclusive institutions. These interconnected targets address root causes of instability, such as poverty, exclusion, and weak accountability.</p>
         </div>
-    </div>
-    <div class="media-container" style=" margin: 0 80px 0 80px; padding: 0px 20px 0px 20px; gap: 80px; font-family: 'Times New Roman', Times, serif;color:rgb(87,86,85)">
-      <div class="media-block" >
-        <h2>Understanding SDG 16</h2>
-        <p style="font-size: 20px;">SDG 16 encompasses targets such as reducing all forms of violence, ending abuse and exploitation, promoting the rule of law, reducing corruption, and ensuring inclusive decision-making. It recognizes that without peace, development stalls; without justice, inequalities fester; and without strong institutions, trust in governance erodes. For instance, target 16.1 focuses on reducing violence, while 16.5 addresses corruption, and 16.7 emphasizes inclusive institutions. These interconnected targets address root causes of instability, such as poverty, exclusion, and weak accountability.</p>
-      </div>
-
-      <div class="media-block">
-        <h2>Challenges and Areas with Severe Situations</h2>
-        <p style="font-size: 20px;">The global landscape for SDG 16 is uneven, with some regions facing particularly dire circumstances. Conflict zones like Syria, Yemen, and parts of the Sahel region in Africa experience high levels of violence, displacing millions and undermining development. According to the 2024 Global Peace Index, 56 countries experienced armed conflict in 2023, with civilian deaths rising in many regions. Corruption remains rampant in countries with weak governance, with Transparency International's 2024 Corruption Perceptions Index highlighting Somalia, South Sudan, and others as critically affected. Marginalized groups, including women, children, and minorities, face disproportionate barriers to justice, particularly in patriarchal or unstable societies. These areas, often in sub-Saharan Africa, the Middle East, and parts of Asia, represent the most severe situations due to entrenched conflict, institutional fragility, and systemic inequities.</p>
-      </div>
-
-      <div class="media-block">
-        <h2>Strategies to Improve SDG 16</h2>
-        <p style="font-size: 20px;">To make SDG 16 more effective, a multi-faceted approach is essential, tailored to local contexts while leveraging global cooperation. Below are key strategies:
-          <ul style="font-size: 18px;">
-            <li><b>Strengthening Institutions: </b>Building transparent, accountable institutions requires investment in capacity-building, such as training judges, police, and civil servants. Anti-corruption measures, like digitalizing public procurement to reduce bribery, have shown promise in countries like Georgia and Estonia. Supporting independent oversight bodies can enhance trust in governance.</li>
-            <br>
-            <li><b>Promoting Access to Justice: </b>Legal aid programs and mobile courts can bridge gaps for marginalized communities. For example, Rwanda's community-based “Gacaca” courts addressed post-genocide justice needs. Expanding digital platforms for legal services can also improve access in remote areas.</li>
-            <br>
-            <li><b>Reducing Violence:</b>Conflict prevention through early warning systems and community mediation can mitigate violence. Programs like the UN's Peacebuilding Fund support grassroots efforts in fragile states. Addressing root causes, such as poverty and inequality, through economic empowerment programs, reduces the likelihood of unrest.</li>
-            <br>
-            <li><b>Fostering Inclusion:</b>Inclusive decision-making, especially for women and youth, strengthens social cohesion. Quotas for women in parliaments, as seen in countries like Sweden and Bolivia, have increased representation and policy equity. Engaging civil society in governance processes ensures diverse voices are heard.</li>
-            <br>
-            <li><b>Leveraging Technology: </b>Digital tools can enhance transparency and accountability. Blockchain-based land registries, for instance, reduce disputes in countries like Ghana. Open data platforms empower citizens to monitor government performance, as seen in initiatives like India's Digital India program.</li>
-          </ul>
-        </p>
-      </div>
-
-      <div class="media-block">
-        <h2>Current Progress and Ongoing Efforts</h2>
-        <p style="font-size: 20px;">Progress on SDG 16 is mixed. The UN's 2024 SDG Progress Report notes that global homicide rates have slightly declined since 2015, but conflict-related deaths have risen, with 120,000 civilian deaths in 2023 alone. Access to justice has improved in some regions, with 1.5 billion people gaining legal identity since 2015, yet 4.4 billion still lack it. Anti-corruption efforts have gained traction, with 190 countries adopting the UN Convention Against Corruption, though enforcement remains weak in many.</p>
-        <p style="font-size: 20px;">Initiatives are underway to advance SDG 16. The UN's “Our Common Agenda” emphasizes peacebuilding and governance reforms, with programs like the Global Accelerator supporting 36 countries in strengthening institutions. Regional efforts, such as the African Union's Agenda 2063, prioritize conflict resolution and rule of law. Civil society organizations, like Amnesty International, advocate for human rights and justice reforms globally. However, funding shortages and political resistance hinder progress, with only 0.7% of global aid allocated to peacebuilding in 2023.</p>
-      </div>
-
-      <div class="media-block">
-        <h2>The Plan Moving Forward</h2>
-        <p style="font-size: 20px;">The UN and its partners have outlined a roadmap to accelerate SDG 16 by 2030, focusing on:
-          <ul style="font-size: 18px;">
-            <li><b>Scaling Peacebuilding:</b> Increase funding for conflict prevention, targeting $500 million annually for the UN Peacebuilding Fund by 2027.</li>
-            <br>
-            <li><b>Justice Reforms:</b>Expand legal aid to cover 50% of populations in low-income countries by 2030, supported by initiatives like the Justice for All campaign.</li>
-            <br>
-            <li><b>Anti-Corruption Measures:</b>Strengthen global frameworks, such as the UN's anti-corruption task force, to recover $4 trillion in illicit financial flows by 2030.</li>
-            <br>
-            <li><b>Inclusive Governance: </b>Achieve 40% female representation in national parliaments globally by 2030, alongside youth engagement programs.</li>
-            <br>
-            <li><b>Data and Monitoring:</b>Improve data collection on violence and governance, with 80% of countries reporting SDG 16 indicators by 2028.</li>
-          </ul>
-        </p>
-        <p style="font-size: 20px;">These plans require political will, increased funding, and partnerships between governments, civil society, and the private sector. Innovations like AI-driven conflict prediction models and citizen feedback platforms are also being piloted to enhance outcomes.</p>
-        
-      </div>
-
-      <div class="media-block">
-        <h2>Conclusion</h2>
-        <p style="font-size: 20px;">SDG 16 is a cornerstone of sustainable development, addressing the intertwined issues of peace, justice, and strong institutions. While progress has been made, severe challenges persist in conflict zones and fragile states, necessitating urgent action. By strengthening institutions, promoting justice, reducing violence, fostering inclusion, and leveraging technology, the global community can advance this goal. Ongoing efforts and planned initiatives provide a framework, but success hinges on sustained commitment and resources. The areas facing the most severe situations—marked by conflict, corruption, and exclusion—require prioritized interventions to ensure no one is left behind. Achieving SDG 16 will not only create peaceful societies but also unlock the potential for broader global development.</p>
+        <div class="media-block">
+          <h2>Challenges and Areas with Severe Situations</h2>
+          <p style="font-size: 20px;">The global landscape for SDG 16 is uneven, with some regions facing particularly dire circumstances. Conflict zones like Syria, Yemen, and parts of the Sahel region in Africa experience high levels of violence, displacing millions and undermining development. According to the 2024 Global Peace Index, 56 countries experienced armed conflict in 2023, with civilian deaths rising in many regions. Corruption remains rampant in countries with weak governance, with Transparency International's 2024 Corruption Perceptions Index highlighting Somalia, South Sudan, and others as critically affected. Marginalized groups, including women, children, and minorities, face disproportionate barriers to justice, particularly in patriarchal or unstable societies. These areas, often in sub-Saharan Africa, the Middle East, and parts of Asia, represent the most severe situations due to entrenched conflict, institutional fragility, and systemic inequities.</p>
+        </div>
+        <div class="media-block">
+          <h2>Strategies to Improve SDG 16</h2>
+          <p style="font-size: 20px;">To make SDG 16 more effective, a multi-faceted approach is essential, tailored to local contexts while leveraging global cooperation. Below are key strategies:
+            <ul style="font-size: 18px;">
+              <li><b>Strengthening Institutions: </b>Building transparent, accountable institutions requires investment in capacity-building, such as training judges, police, and civil servants. Anti-corruption measures, like digitalizing public procurement to reduce bribery, have shown promise in countries like Georgia and Estonia. Supporting independent oversight bodies can enhance trust in governance.</li>
+              <br>
+              <li><b>Promoting Access to Justice: </b>Legal aid programs and mobile courts can bridge gaps for marginalized communities. For example, Rwanda's community-based "Gacaca" courts addressed post-genocide justice needs. Expanding digital platforms for legal services can also improve access in remote areas.</li>
+              <br>
+              <li><b>Reducing Violence:</b>Conflict prevention through early warning systems and community mediation can mitigate violence. Programs like the UN's Peacebuilding Fund support grassroots efforts in fragile states. Addressing root causes, such as poverty and inequality, through economic empowerment programs, reduces the likelihood of unrest.</li>
+              <br>
+              <li><b>Fostering Inclusion:</b>Inclusive decision-making, especially for women and youth, strengthens social cohesion. Quotas for women in parliaments, as seen in countries like Sweden and Bolivia, have increased representation and policy equity. Engaging civil society in governance processes ensures diverse voices are heard.</li>
+              <br>
+              <li><b>Leveraging Technology: </b>Digital tools can enhance transparency and accountability. Blockchain-based land registries, for instance, reduce disputes in countries like Ghana. Open data platforms empower citizens to monitor government performance, as seen in initiatives like India's Digital India program.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="media-block">
+          <h2>Current Progress and Ongoing Efforts</h2>
+          <p style="font-size: 20px;">Progress on SDG 16 is mixed. The UN's 2024 SDG Progress Report notes that global homicide rates have slightly declined since 2015, but conflict-related deaths have risen, with 120,000 civilian deaths in 2023 alone. Access to justice has improved in some regions, with 1.5 billion people gaining legal identity since 2015, yet 4.4 billion still lack it. Anti-corruption efforts have gained traction, with 190 countries adopting the UN Convention Against Corruption, though enforcement remains weak in many.</p>
+          <p style="font-size: 20px;">Initiatives are underway to advance SDG 16. The UN's "Our Common Agenda" emphasizes peacebuilding and governance reforms, with programs like the Global Accelerator supporting 36 countries in strengthening institutions. Regional efforts, such as the African Union's Agenda 2063, prioritize conflict resolution and rule of law. Civil society organizations, like Amnesty International, advocate for human rights and justice reforms globally. However, funding shortages and political resistance hinder progress, with only 0.7% of global aid allocated to peacebuilding in 2023.</p>
+        </div>
+        <div class="media-block">
+          <h2>The Plan Moving Forward</h2>
+          <p style="font-size: 20px;">The UN and its partners have outlined a roadmap to accelerate SDG 16 by 2030, focusing on:
+            <ul style="font-size: 18px;">
+              <li><b>Scaling Peacebuilding:</b> Increase funding for conflict prevention, targeting $500 million annually for the UN Peacebuilding Fund by 2027.</li>
+              <br>
+              <li><b>Justice Reforms:</b>Expand legal aid to cover 50% of populations in low-income countries by 2030, supported by initiatives like the Justice for All campaign.</li>
+              <br>
+              <li><b>Anti-Corruption Measures:</b>Strengthen global frameworks, such as the UN's anti-corruption task force, to recover $4 trillion in illicit financial flows by 2030.</li>
+              <br>
+              <li><b>Inclusive Governance: </b>Achieve 40% female representation in national parliaments globally by 2030, alongside youth engagement programs.</li>
+              <br>
+              <li><b>Data and Monitoring:</b>Improve data collection on violence and governance, with 80% of countries reporting SDG 16 indicators by 2028.</li>
+            </ul>
+          </p>
+          <p style="font-size: 20px;">These plans require political will, increased funding, and partnerships between governments, civil society, and the private sector. Innovations like AI-driven conflict prediction models and citizen feedback platforms are also being piloted to enhance outcomes.</p>
+        </div>
+        <div class="media-block">
+          <h2>Conclusion</h2>
+          <p style="font-size: 20px;">SDG 16 is a cornerstone of sustainable development, addressing the intertwined issues of peace, justice, and strong institutions. While progress has been made, severe challenges persist in conflict zones and fragile states, necessitating urgent action. By strengthening institutions, promoting justice, reducing violence, fostering inclusion, and leveraging technology, the global community can advance this goal. Ongoing efforts and planned initiatives provide a framework, but success hinges on sustained commitment and resources. The areas facing the most severe situations—marked by conflict, corruption, and exclusion—require prioritized interventions to ensure no one is left behind. Achieving SDG 16 will not only create peaceful societies but also unlock the potential for broader global development.</p>
+        </div>
       </div>
     </div>
     
+    <!-- 页面加载动画遮罩 -->
+    <div id="pageLoader">Loading...</div>
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" title="返回顶部">↑</button>
+    <div class="footer-row">
+      <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
+      <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
+    </div>
   </body>
 </html>

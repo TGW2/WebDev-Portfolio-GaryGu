@@ -6,57 +6,68 @@
     <script src="scripts/script.js"></script>
   </head>
   <body>
-    <div Class="name">
-      <p>GaryGu</p>
-    </div>
-    <div class="box">
-    <ul class="top_manu">
-      <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
-      <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
-      <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
-      <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
-      <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
-    </ul>
-    
-
-    <div class="title">
-      <h1>Design Thinking Process</h1>
-      <div class="subtitle">
-        <span class="point"><b>Simple</b></span>
-        <span class="point"><b>Clear</b></span>
-        <span class="point"><b>Easy for Guidance</b></span>
-        <br>
-        <img src="images/IN_DEsignthinking_Design-Thinking-2.png" alt="design_thinking_process" width="700" height="350">
+    <div class="header">
+      <div class="name">
+        <p>GaryGu</p>
       </div>
-      <!-- <h2>·Simple  ·Clear  ·Easy for Guidance</h2> -->
-      <div class="media-container">
-        <div class="media-block" style="color:rgb(87,86,85)">
-          <h2>1.Empathize</h2>
-          <h3>I started by understanding the needs of my audience—potential clients and visitors interested in my media design work. I considered what they might look for: a clean layout, quick access to my portfolio, and an intuitive navigation experience.</h3>
+      <ul class="top_manu">
+        <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
+        <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
+        <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
+        <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
+        <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
+      </ul>
+    </div>
+    <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
+    <div class="hero-section">
+      <h1 class="hero-title">Design Thinking Process</h1>
+      <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
+    </div>
+    <div id="main-content-section" class="content-section">
+      <div class="title">
+        <div class="subtitle">
+          <span class="point"><b>Simple</b></span>
+          <span class="point"><b>Clear</b></span>
+          <span class="point"><b>Easy for Guidance</b></span>
+          <br>
+          <img src="images/IN_DEsignthinking_Design-Thinking-2.png" alt="design_thinking_process" width="700" height="350">
         </div>
-        <div class="media-block" style="color:rgb(87,86,85)">
-          <h2>2.Define</h2>
-          <h3>Based on this, I defined the problem as creating a website that minimizes clutter, highlights my work effectively, and provides clear guidance without overwhelming users.</h3>
-        </div>
-        <div class="media-block" style="color:rgb(87,86,85)">
-          <h2>3.Ideate</h2>
-          <h3>I brainstormed various layout options, focusing on a minimalistic design with a single-column structure. I decided to include a navigation bar with essential sections and a portfolio section to showcase my designs prominently.</h3>
-        </div>
-        <div class="media-block" style="color:rgb(87,86,85)">
-          <h2>4.Prototype</h2>
-          <h3>I created a basic version of the website with a beige background, a simple logo, and sections for portfolio items. I tested different font sizes and placements to ensure readability and accessibility.</h3>
-        </div>
-        <div class="media-block" style="color:rgb(87,86,85)">
-          <h2>5.Test</h2>
-          <h3>I sought feedback from a few peers, asking if they could easily find my work and navigate the site. Based on their input, I adjusted the spacing and refined the text to make it more concise, ensuring the website remained user-friendly.</h3>
-        </div>
-        <div class="media-block" style="color:rgb(87,86,85)">
-          <h2>6.Implement</h2>
-          <h3>I finalized the design by applying the feedback, optimizing performance, and ensuring the website aligns with my vision of simplicity and clarity.</h3>
+        <div class="media-container">
+          <div class="media-block" style="color:rgb(87,86,85)">
+            <h2>1.Empathize</h2>
+            <h3>I started by understanding the needs of my audience—potential clients and visitors interested in my media design work. I considered what they might look for: a clean layout, quick access to my portfolio, and an intuitive navigation experience.</h3>
+          </div>
+          <div class="media-block" style="color:rgb(87,86,85)">
+            <h2>2.Define</h2>
+            <h3>Based on this, I defined the problem as creating a website that minimizes clutter, highlights my work effectively, and provides clear guidance without overwhelming users.</h3>
+          </div>
+          <div class="media-block" style="color:rgb(87,86,85)">
+            <h2>3.Ideate</h2>
+            <h3>I brainstormed various layout options, focusing on a minimalistic design with a single-column structure. I decided to include a navigation bar with essential sections and a portfolio section to showcase my designs prominently.</h3>
+          </div>
+          <div class="media-block" style="color:rgb(87,86,85)">
+            <h2>4.Prototype</h2>
+            <h3>I created a basic version of the website with a beige background, a simple logo, and sections for portfolio items. I tested different font sizes and placements to ensure readability and accessibility.</h3>
+          </div>
+          <div class="media-block" style="color:rgb(87,86,85)">
+            <h2>5.Test</h2>
+            <h3>I sought feedback from a few peers, asking if they could easily find my work and navigate the site. Based on their input, I adjusted the spacing and refined the text to make it more concise, ensuring the website remained user-friendly.</h3>
+          </div>
+          <div class="media-block" style="color:rgb(87,86,85)">
+            <h2>6.Implement</h2>
+            <h3>I finalized the design by applying the feedback, optimizing performance, and ensuring the website aligns with my vision of simplicity and clarity.</h3>
+          </div>
         </div>
       </div>
     </div>
-  </div>
     
+    <!-- 页面加载动画遮罩 -->
+    <div id="pageLoader">Loading...</div>
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" title="返回顶部">↑</button>
+    <div class="footer-row">
+      <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
+      <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
+    </div>
   </body>
 </html>

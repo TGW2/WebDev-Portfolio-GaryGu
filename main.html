@@ -7,38 +7,41 @@
     <script>alert('Welcome to my portfolio');</script>
   </head>
   <body>
-    <div Class="name">
-      <p>GaryGu</p>
+    <div class="header">
+      <div class="name">
+        <p>GaryGu</p>
+      </div>
+      <ul class="top_manu">
+        <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
+        <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
+        <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
+        <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
+        <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
+      </ul>
+    </div>
+    <button id="readAllBtn" title="Read the entire page content" aria-label="Read the entire page content">🔊</button>
+
+    <div class="hero-section">
+      <img src="images/银.png" alt="Isana" class="hero-img">
+      <h1 class="hero-title">GaryGu</h1>
+      <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
+    </div>
+    <div id="main-content-section" class="content-section">
+      <div class="intro">
+        <p>
+          I'm a person with strong logical ability, good at analyzing the facts of events and things, and know how to solve problems most effectively. I'm also a very passionate person, and full of patience, It's never been my style to rush things. 
+        </p>
+        <button class="button" onclick="window.location.href='portfolio_section.html'">Here to explore more</button>
+      </div>
     </div>
 
-    <ul class="top_manu">
-      <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
-      <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
-      <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
-      <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
-      <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
-    </ul>
-    
-
-    <div class="title">
-      <h1>Hello I'm GaryGu</h1>
-      <img src="images/银.png" alt="Isana" width="20%" height="30%">
-        <div class="intro">
-          <p>
-            A design enthusiast with a passion for creative problem-solving. I specialize in design thinking and UI/UX, crafting solutions that prioritize users and innovation. Explore my portfolio to see my latest projects, or learn how I align my work with UN Global Goals for a sustainable future!
-          </p>
-          <p>
-            I'm a passionate web developer with a knack for creating dynamic and user-friendly websites. With expertise in HTML, CSS, JavaScript, and modern frameworks like React, I bring ideas to life through clean code and innovative design. Whether it's building responsive layouts or optimizing performance, I thrive on crafting digital experiences that engage and inspire.
-          </p>
-          <button class="button" ><a href="portfolio_section.html" style="color: rgb(142, 141, 141); text-decoration: none;">Here to explore more</a></button>
-          
-          
-          <!-- <img src="images/saber_4.jpg" width="500px" height="400px" alt="saber"> -->
-        </div>
-        
+    <!-- 页面加载动画遮罩 -->
+    <div id="pageLoader">Loading...</div>
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" title="Back to Top">↑</button>
+    <div class="footer-row">
+      <button id="readAllBtn" title="Read the entire page content" aria-label="Read the entire page content">🔊</button>
+      <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
     </div>
-
-    
-    
   </body>
 </html>

@@ -6,48 +6,47 @@
     <script src="scripts/script.js"></script>
   </head>
   <body>
-    <div Class="name">
-      <p>GaryGu</p>
+    <div class="header">
+      <div class="name">
+        <p>GaryGu</p>
+      </div>
+      <ul class="top_manu">
+        <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
+        <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
+        <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
+        <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
+        <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
+      </ul>
     </div>
+    <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
 
-    <ul class="top_manu">
-      <li><a href="main.html" title="Goes to main page" style="text-decoration: none; color:rgb(87,86,85)" target="_blank">Home Page</a></li>
-      <li><a href="portfolio_section.html" title="Goes to the Portfolio Section" style="text-decoration: none;color:rgb(87,86,85)">Portfolio Section</a></li>
-      <li><a href="design_thinking_process.html" title="Design Thinking Process" style="text-decoration: none;color:rgb(87,86,85)">Design Thinking Process</a></li>
-      <li><a href="UN_Global_Goals.html" title="UN Global Goals" style="text-decoration: none;color:rgb(87,86,85)">UN Global Goals</a></li>
-      <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
-    </ul>
-    
-
-    <div class="title">
-      <h1>Portfolio Section</h1>
-      
-      <div class="intro" >
-        <h2>Media Design</h2>
-        <img src="images/media_design.jpg" alt="media design" width="300" height="140">
-        <p>On my media design class, i was responsible for a company called <b>Detroit City Football Club</b>. And my job is to listen what my client's requirement, making poster, logo, postcard and plan the campaign for future football matches.</p>
+    <div class="hero-section">
+      <h1 class="hero-title">Portfolio Section</h1>
+      <h2 class="hero-subtitle">Media Design</h2>
+      <img src="images/media_design.jpg" alt="media design" class="hero-img">
+      <button class="scroll-down-btn" onclick="document.getElementById('portfolio-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
+    </div>
+    <div id="portfolio-content-section" class="content-section">
+      <div class="intro">
         <h3>Here's some of my works</h3>
       </div>
-    </div>
-    <div class="media-container">
-      <div class="media-block">
-        <img src="images/icon.png" alt="logo">
-        <h3>This is the Logo I designed for the company</h3>
-      </div>
-
-      <div class="media-block">
-        <embed src="images/poster.pdf" type="application/pdf">
-        <h3>This is the sample poster I made for the company's publicity.</h3>
-      </div>
-
-      <div class="media-block">
-        <embed src="images/postcard.pdf" type="application/pdf">
-        <h3>This is the postcard for this company.</h3>
-      </div>
-
-      <div class="media-block">
-        <embed src="images/campaign.pdf" type="application/pdf">
-        <h3>This is one of the campaign for the company.</h3>
+      <div class="media-container">
+        <div class="media-block">
+          <img src="images/icon.png" alt="logo">
+          <h3>Logo I designed for the company</h3>
+        </div>
+        <div class="media-block">
+          <embed src="images/poster.pdf" type="application/pdf">
+          <h3>Sample poster I made for the company's publicity.</h3>
+        </div>
+        <div class="media-block">
+          <embed src="images/postcard.pdf" type="application/pdf">
+          <h3>Postcard for this company.</h3>
+        </div>
+        <div class="media-block">
+          <embed src="images/campaign.pdf" type="application/pdf">
+          <h3>Campaign for the company.</h3>
+        </div>
       </div>
     </div>
     <!-- <div class="PS" >
@@ -69,6 +68,13 @@
           <h3>This is one of the campaign for the company.</h3>
         </div> -->
     
-    
+    <!-- 页面加载动画遮罩 -->
+    <div id="pageLoader">Loading...</div>
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" title="返回顶部">↑</button>
+    <div class="footer-row">
+      <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
+      <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
+    </div>
   </body>
 </html>
