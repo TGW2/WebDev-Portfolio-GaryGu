@@ -3,8 +3,8 @@ window.addEventListener('DOMContentLoaded', function() {
   // 页面加载动画
   const loader = document.getElementById('pageLoader');
   if (loader) {
-    setTimeout(() => loader.classList.add('hide'), 600);
-    setTimeout(() => loader.remove(), 1200);
+    setTimeout(() => loader.classList.add('hide'), 200);
+    setTimeout(() => loader.remove(), 600);
   }
 
   // 返回顶部按钮
