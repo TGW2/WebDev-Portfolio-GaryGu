@@ -18,62 +18,109 @@
         <li><a href="Accessibility_Statement.html" title="Accessibility Statement" style="text-decoration: none; color:rgb(87,86,85)">Accessibility Statement</a></li>
       </ul>
     </div>
-    <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
+    <button id="readAllBtn" title="Read the entire page content" aria-label="朗读全页内容">🔊</button>
 
     <div class="hero-section">
       <h1 class="hero-title">Portfolio Section</h1>
-      <h2 class="hero-subtitle">Media Design</h2>
-      <img src="images/media_design.jpg" alt="media design" class="hero-img">
       <button class="scroll-down-btn" onclick="document.getElementById('portfolio-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
     </div>
-    <div id="portfolio-content-section" class="content-section">
-      <div class="intro">
-        <h3>Here's some of my works</h3>
+    <div id="portfolio-content-section">
+    <div class="section-nav" style="padding-top: 100px;">
+        <a href="#media-design-title" class="section-box" id="btn-media-design" style="display: flex; align-items: center; justify-content: center; width: 160px; height: 60px; border-radius: 16px; background: linear-gradient(90deg,#f7c873 0%,#f3ede7 100%); box-shadow: 0 2px 8px rgba(247,200,115,0.12); font-size: 1.2rem; font-weight: 600; color: #7a5c1b; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Media Design</a>
+        <a href="#frisbee-title" class="section-box" id="btn-frisbee" style="display: flex; align-items: center; justify-content: center; width: 160px; height: 60px; border-radius: 16px; background: linear-gradient(90deg,#f7c873 0%,#f3ede7 100%); box-shadow: 0 2px 8px rgba(247,200,115,0.12); font-size: 1.2rem; font-weight: 600; color: #7a5c1b; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Frisbee</a>
+        <a href="#music-title" class="section-box" id="btn-music" style="display: flex; align-items: center; justify-content: center; width: 160px; height: 60px; border-radius: 16px; background: linear-gradient(90deg,#f7c873 0%,#f3ede7 100%); box-shadow: 0 2px 8px rgba(247,200,115,0.12); font-size: 1.2rem; font-weight: 600; color: #7a5c1b; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Music</a>
+      </div>
+    <!-- <div id="portfolio-content-section" class="content-section"> -->
+    
+      <div id="main-content-section" class="content-section">
+        <div class="intro" id="media-design" style="text-align: center;">
+          <h2 class="hero-subtitle" id="media-design-title" style="text-align: center;">Media Design</h2>
+          <img src="images/media_design.jpg" alt="media design" class="hero-img" style="display: block; margin: 0 auto;">
+          <h3>Here's some works I worked for my company <b>Detroit City Football Club</b></h3>
+        </div>
+        <div class="media-container">
+          <div class="media-block">
+            <img src="images/icon.png" alt="logo">
+            <h3>Logo</h3>
+          </div>
+          <div class="media-block">
+            <embed src="images/poster.pdf" type="application/pdf">
+            <h3>Sample Poster</h3>
+          </div>
+          <div class="media-block">
+            <embed src="images/postcard.pdf" type="application/pdf">
+            <h3>Postcard</h3>
+          </div>
+          <div class="media-block">
+            <embed src="images/campaign.pdf" type="application/pdf">
+            <h3>Campaign Sample</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content-section" class="content-section" >
+      <div class="intro" id="frisbee" style="text-align: center;">
+        <h2 class="hero-subtitle" id="frisbee-title" style="text-align: center;">Frisbee</h2>
+        <img src="images/frisbee.jpg" alt="frisbee" class="hero-img" style="display: block; margin: 0 auto;">
+        <h3>After getting into high school, i starting to play feisbee. I's a fun sports.</h3>
       </div>
       <div class="media-container">
         <div class="media-block">
-          <img src="images/icon.png" alt="logo">
-          <h3>Logo I designed for the company</h3>
+          <img src="images/ZJO.jpg" alt="ZJO" class="hero-img" style="display: block; margin: 0 auto;">
         </div>
         <div class="media-block">
-          <embed src="images/poster.pdf" type="application/pdf">
-          <h3>Sample poster I made for the company's publicity.</h3>
+          <img src="images/NM.jpg" alt="NM" class="hero-img" style="display: block; margin: 0 auto;">
         </div>
         <div class="media-block">
-          <embed src="images/postcard.pdf" type="application/pdf">
-          <h3>Postcard for this company.</h3>
+          <img src="images/SZO01.jpg" alt="SZO01" class="hero-img" style="display: block; margin: 0 auto;">
         </div>
         <div class="media-block">
-          <embed src="images/campaign.pdf" type="application/pdf">
-          <h3>Campaign for the company.</h3>
+          <img src="images/SZO02.jpg" alt="SZO02" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/SZO03.jpg" alt="SZO03" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/SZO04.jpg" alt="SZO04" class="hero-img" style="display: block; margin: 0 auto;">
         </div>
       </div>
     </div>
-    <!-- <div class="PS" >
-          <img src="images/icon.png" width="300px" height="300px" alt="logo" style="display: inline-block;">
-          <h3>This is the Logo I designed for the company</h3>
-        
-        
-        
-          <embed src="images/poster.pdf" width="600" height="500" type="application/pdf" style="display: inline-block;">
-          <h3>This is the sample poster I made for the company's publicity.</h3>
-          
+    <div id="main-content-section" class="content-section" >
+      <div class="intro" id="music" style="text-align: center;">
+        <h2 class="hero-subtitle" id="music-title" style="text-align: center;">Music</h2>
+        <!-- <img src="images/frisbee.jpg" alt="frisbee" class="hero-img" style="display: block; margin: 0 auto;"> -->
+        <h3>I like listening to music. Pop, Rock, Hip-Hop music are my favorite.</h3>
+      </div>
+      <div class="media-container">
+        <div class="media-block">
+          <img src="images/ZJO.jpg" alt="ZJO" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/NM.jpg" alt="NM" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/SZO01.jpg" alt="SZO01" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/SZO02.jpg" alt="SZO02" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/SZO03.jpg" alt="SZO03" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+        <div class="media-block">
+          <img src="images/SZO04.jpg" alt="SZO04" class="hero-img" style="display: block; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
 
-          <embed src="images/postcard.pdf" width="600" height="300" type="application/pdf" style="display: inline-block;">
-          <h3>This is the postcard for this company.</h3>
+    </div>
 
-
-
-          <embed src="images/campaign.pdf" width="600" height="900" style="display: inline-block;">
-          <h3>This is one of the campaign for the company.</h3>
-        </div> -->
-    
     <!-- 页面加载动画遮罩 -->
     <div id="pageLoader">Loading...</div>
     <!-- 返回顶部按钮 -->
-    <button id="backToTop" title="返回顶部">↑</button>
+    <button id="backToTop" title="Back to top">↑</button>
     <div class="footer-row">
-      <button id="readAllBtn" title="朗读全页内容" aria-label="朗读全页内容">🔊</button>
+      <button id="readAllBtn" title="Read the entire page content" aria-label="朗读全页内容">🔊</button>
       <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
     </div>
   </body>
