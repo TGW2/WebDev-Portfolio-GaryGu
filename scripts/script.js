@@ -1,13 +1,13 @@
 // 页面加载动画
 window.addEventListener('DOMContentLoaded', function() {
-  // 页面加载动画
+  // Page loading animation
   const loader = document.getElementById('pageLoader');
   if (loader) {
     setTimeout(() => loader.classList.add('hide'), 200);
     setTimeout(() => loader.remove(), 600);
   }
 
-  // 返回顶部按钮
+  // Back to Top button
   const backToTop = document.getElementById('backToTop');
   if (backToTop) {
     window.addEventListener('scroll', function() {
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function() {
     };
   }
 
-  // 导航高亮
+  // Navigation highlight
   const navLinks = document.querySelectorAll('.top_manu li a');
   navLinks.forEach(link => {
     if (window.location.href.includes(link.getAttribute('href'))) {
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // 全局朗读按钮
+  // Global Read Button
   const readAllBtn = document.getElementById('readAllBtn');
   if (readAllBtn) {
     let isReading = false;
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function() {
         isReading = false;
         return;
       }
-      // 获取主要内容
+      // Obtain the main content
       let text = '';
       // 1. title
       const title = document.querySelector('.title');
@@ -54,10 +54,10 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.media-block').forEach(block => {
         text += block.innerText + '\n';
       });
-      // 4. 其他主要内容可按需添加
+      // 4. Other main contents can be added as needed.
       text = text.replace(/\n{2,}/g, '\n');
       if (!text.trim()) text = document.body.innerText;
-      // 朗读
+      //Read aloud
       utter = new window.SpeechSynthesisUtterance(text);
       utter.lang = 'en-US';
       utter.onend = utter.onerror = function() {
@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function() {
       readAllBtn.classList.add('reading');
       isReading = true;
     };
-    // 滚动时显示/隐藏按钮（与返回顶部按钮一致）
+    // Show/hide button when scrolling (consistent with the back to top button)
     window.addEventListener('scroll', function() {
       if (window.scrollY > 200) {
         readAllBtn.classList.add('show');
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
         readAllBtn.classList.remove('show');
       }
     });
-    // 初始判断
+    // Initial judgment
     if (window.scrollY > 200) {
       readAllBtn.classList.add('show');
     } else {
@@ -140,5 +140,59 @@ window.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+
+  // portfolio_section.html Music cover click to switch YouTube video
+  if (window.location.pathname.includes('portfolio_section.html')) {
+    const musicData = [
+      {
+        id: 'music-one-last-kiss',
+        img: 'images/one_last_kiss.jpg',
+        alt: 'one_last_kiss',
+        video: 'images/video/one_last_kiss.mp4'
+      },
+      {
+        id: 'music-whiplash',
+        img: 'images/boa.jpg',
+        alt: 'boa',
+        video: 'images/video/whiplash.mp4'
+      },
+      {
+        id: 'music-aliez',
+        img: 'images/aLiez.jpg',
+        alt: 'aLiez',
+        video: 'images/video/aliez.mp4'
+      },
+      {
+        id: 'music-bios',
+        img: 'images/BIOS.jpg',
+        alt: 'BIOS',
+        video: 'images/video/bios.mp4'
+      }
+    ];
+    musicData.forEach(item => {
+      const block = document.getElementById(item.id);
+      if (!block) return;
+      const img = block.querySelector('img');
+      if (!img) return;
+      img.addEventListener('click', function() {
+        // First, restore all to images
+        musicData.forEach(other => {
+          const otherBlock = document.getElementById(other.id);
+          if (!otherBlock) return;
+          if (other.id === item.id) return;
+          if (!otherBlock.querySelector('img')) {
+            otherBlock.innerHTML = `<img src="${other.img}" alt="${other.alt}" class="hero-img music-cover" style="display: block; margin: 0 auto; cursor:pointer;"><h2>${otherBlock.querySelector('h2').innerText}</h2>`;
+            // Rebind Click
+            otherBlock.querySelector('img').addEventListener('click', function() {
+              block.querySelector('img').click();
+            });
+          }
+        });
+        // The current replacement is a local video.
+        block.innerHTML = `<video src="${item.video}" width="100%" height="340" style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);" controls autoplay></video><h2>${block.querySelector('h2').innerText}</h2>`;
+      });
+    });
+  }
+
 });
 
