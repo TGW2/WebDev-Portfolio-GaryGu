@@ -18,6 +18,14 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     });
     backToTop.onclick = function() {
+      //Determine whether on the portfolio_section.html page
+      if (window.location.pathname.includes('portfolio_section.html')) {
+        const section = document.getElementById('portfolio-content-section');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
   }
@@ -169,28 +177,30 @@ window.addEventListener('DOMContentLoaded', function() {
         video: 'images/video/bios.mp4'
       }
     ];
-    musicData.forEach(item => {
+
+    function bindMusicCoverClick(item) {
       const block = document.getElementById(item.id);
       if (!block) return;
       const img = block.querySelector('img');
       if (!img) return;
-      img.addEventListener('click', function() {
-        // First, restore all to images
+      img.onclick = function() {
+        // 先恢复所有为图片
         musicData.forEach(other => {
           const otherBlock = document.getElementById(other.id);
           if (!otherBlock) return;
-          if (other.id === item.id) return;
           if (!otherBlock.querySelector('img')) {
             otherBlock.innerHTML = `<img src="${other.img}" alt="${other.alt}" class="hero-img music-cover" style="display: block; margin: 0 auto; cursor:pointer;"><h2>${otherBlock.querySelector('h2').innerText}</h2>`;
-            // Rebind Click
-            otherBlock.querySelector('img').addEventListener('click', function() {
-              block.querySelector('img').click();
-            });
+            // 重新绑定点击事件
+            bindMusicCoverClick(other);
           }
         });
-        // The current replacement is a local video.
+        // 当前替换为视频
         block.innerHTML = `<video src="${item.video}" width="100%" height="340" style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);" controls autoplay></video><h2>${block.querySelector('h2').innerText}</h2>`;
-      });
+      };
+    }
+    // 初始绑定
+    musicData.forEach(item => {
+      bindMusicCoverClick(item);
     });
   }
 
