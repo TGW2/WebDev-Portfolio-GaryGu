@@ -1,6 +1,6 @@
 # WebDev-Portfolio-GaryGu
 
-🎨 **Gary Gu's Web Development Portfolio Website**
+## 🎨 **Gary Gu's Web Development Portfolio Website**
 
 This is my final project for a Web Development course, designed to showcase my skills in HTML, CSS, and JavaScript. The website highlights my design thinking process, accessibility principles, and personal projects. It is structured to be clean, responsive, and accessible for all users.
 
