@@ -608,3 +608,20 @@ body {
   gap: 32px;
   margin-bottom: 70px;
 }
+
+.toggle-btn {
+  border: none;
+  background: none;
+  color: #575655;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s, transform 0.2s;
+  vertical-align: middle;
+}
+.toggle-btn:focus, .toggle-btn:hover {
+  color: #a88b4a;
+  transform: scale(1.2);
+}

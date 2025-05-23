@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -23,11 +23,11 @@
       <p style="font-size: 1.2rem; color: #575655; margin-bottom: 32px;padding-left: 400px;padding-right: 400px;">If you have any questions or suggestions while browsing my website, please leave a message through the form below, and I will check your feedback as soon as possible!</p>
       <form class="contact-form" style="background:rgba(255,255,255,0.98);border-radius:18px;box-shadow:0 4px 24px rgba(0,0,0,0.08);padding:36px 32px 28px 32px;max-width:420px;margin:0 auto;display:flex;flex-direction:column;gap:18px;">
         <label for="name" style="font-size:1.1rem;font-weight:600;color:#a88b4a;">Name</label>
-        <input type="text" id="name" name="name" placeholder="Please enter your name." required style="padding:12px 16px;border-radius:8px;border:1px solid #e0cfa6;font-size:1rem;" oninvalid="this.setCustomValidity('Please enter your name.')" oninput="setCustomValidity('')">
+        <input type="text" id="name" name="name" placeholder="Please enter your name." required style="padding:12px 16px;border-radius:8px;border:1px solid #e0cfa6;font-size:1rem;" oninvalid="this.setCustomValidity('Please enter your name.')" oninput="this.setCustomValidity('')">
         <label for="email" style="font-size:1.1rem;font-weight:600;color:#a88b4a;">Email</label>
-        <input type="email" id="email" name="email" placeholder="Please enter your email address." required style="padding:12px 16px;border-radius:8px;border:1px solid #e0cfa6;font-size:1rem;" oninvalid="this.setCustomValidity('Please enter a valid email address.')" oninput="setCustomValidity('')">
+        <input type="email" id="email" name="email" placeholder="Please enter your email address." required style="padding:12px 16px;border-radius:8px;border:1px solid #e0cfa6;font-size:1rem;" oninvalid="this.setCustomValidity('Please include an @ in the email address.')" oninput="this.setCustomValidity('')">
         <label for="message" style="font-size:1.1rem;font-weight:600;color:#a88b4a;">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Please fill in your question or suggestion." required style="padding:12px 16px;border-radius:8px;border:1px solid #e0cfa6;font-size:1rem;resize:vertical;" oninvalid="this.setCustomValidity('Please enter your message.')" oninput="setCustomValidity('')"></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Please fill in your question or suggestion." required style="padding:12px 16px;border-radius:8px;border:1px solid #e0cfa6;font-size:1rem;resize:vertical;" oninvalid="this.setCustomValidity('Please enter your message.')" oninput="this.setCustomValidity('')"></textarea>
         <button type="submit" class="button" style="margin-top:18px;">Send</button>
       </form>
     </div>

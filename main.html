@@ -21,10 +21,11 @@
     </div>
     <button id="readAllBtn" title="Read the entire page content" aria-label="Read the entire page content">🔊</button>
 
-    <div class="hero-section">
-      <img src="images/银.png" alt="Isana" class="hero-img">
-      <h1 class="hero-title">GaryGu</h1>
-      <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
+    <div class="hero-section" style="position:relative;overflow:hidden;">
+      <img src="images/加藤惠.png" alt="background" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.5;pointer-events:none;">
+      <img src="images/银.png" alt="Isana" class="hero-img" style="position:relative;z-index:1;">
+      <h1 class="hero-title" style="position:relative;z-index:1;">GaryGu</h1>
+      <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});" style="z-index:1;">⇓</button>
     </div>
     <div id="main-content-section" class="content-section">
       <div class="intro-flex">

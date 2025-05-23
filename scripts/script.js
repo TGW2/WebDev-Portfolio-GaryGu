@@ -194,5 +194,19 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  document.querySelectorAll('#planned-features-list .toggle-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const detail = btn.parentElement.querySelector('.feature-detail');
+      if (detail.hasAttribute('hidden')) {
+        detail.removeAttribute('hidden');
+        btn.textContent = '<';
+        btn.setAttribute('aria-label', 'Collapse');
+      } else {
+        detail.setAttribute('hidden', '');
+        btn.textContent = '>';
+        btn.setAttribute('aria-label', 'Expand');
+      }
+    });
+  });
 });
 
