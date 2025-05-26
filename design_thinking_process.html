@@ -19,12 +19,12 @@
       </ul>
     </div>
     <button id="readAllBtn" title="Read the entire page content" aria-label="朗读全页内容">🔊</button>
-    <div class="hero-section">
-      <h1 class="hero-title">Design Thinking Process</h1>
-      <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
-    </div>
-    <div id="main-content-section" class="content-section">
-      <!-- <div class="title"> -->
+    <main>
+      <section class="hero-section">
+        <h1 class="hero-title">Design Thinking Process</h1>
+        <button class="scroll-down-btn" onclick="document.getElementById('main-content-section').scrollIntoView({behavior: 'smooth'});">⇓</button>
+      </section>
+      <section id="main-content-section" class="content-section">
         <div class="subtitle">
           <span class="point"><b>Simple</b></span>
           <span class="point"><b>Clear</b></span>
@@ -33,41 +33,110 @@
           <img src="images/IN_DEsignthinking_Design-Thinking-2.png" alt="design_thinking_process" width="700" height="350" style="margin-top: 20px;">
         </div>
         <div class="media-container">
-          <div class="media-block" style="color:rgb(87,86,85)">
+          <div class="media-block">
             <h2>1.Empathize</h2>
             <h3>I started by understanding the needs of my audience—potential clients and visitors interested in my media design work. I considered what they might look for: a clean layout, quick access to my portfolio, and an intuitive navigation experience.</h3>
           </div>
-          <div class="media-block" style="color:rgb(87,86,85)">
+          <div class="media-block">
             <h2>2.Define</h2>
             <h3>Based on this, I defined the problem as creating a website that minimizes clutter, highlights my work effectively, and provides clear guidance without overwhelming users.</h3>
           </div>
-          <div class="media-block" style="color:rgb(87,86,85)">
+          <div class="media-block">
             <h2>3.Ideate</h2>
             <h3>I brainstormed various layout options, focusing on a minimalistic design with a single-column structure. I decided to include a navigation bar with essential sections and a portfolio section to showcase my designs prominently.</h3>
           </div>
-          <div class="media-block" style="color:rgb(87,86,85)">
+          <div class="media-block">
             <h2>4.Prototype</h2>
             <h3>I created a basic version of the website with a beige background, a simple logo, and sections for portfolio items. I tested different font sizes and placements to ensure readability and accessibility.</h3>
           </div>
-          <div class="media-block" style="color:rgb(87,86,85)">
+          <div class="media-block">
             <h2>5.Test</h2>
             <h3>I sought feedback from a few peers, asking if they could easily find my work and navigate the site. Based on their input, I adjusted the spacing and refined the text to make it more concise, ensuring the website remained user-friendly.</h3>
           </div>
-          <div class="media-block" style="color:rgb(87,86,85)">
+          <div class="media-block">
             <h2>6.Implement</h2>
             <h3>I finalized the design by applying the feedback, optimizing performance, and ensuring the website aligns with my vision of simplicity and clarity.</h3>
           </div>
         </div>
-      </div>
-    <!-- </div> -->
-    
+      </section>
+      <section id="behind-curtain-section" class="content-section">
+        <div class="subtitle">
+          <h1 style="font-size: 30px;">Behind the Curtain</h1>  
+        </div>
+        <div class="media-container" style="flex-direction:column;align-items:center;gap:36px;">
+          <div class="media-block" style="width:90%;max-width:900px;">
+            <h2>Screenshot of HTML structure</h2>
+            <img src="images/screenshot_DTP.png" alt="screenshot_DTP" width="100%" height="auto" style="margin-top: 20px;max-width:100%;border-radius:12px;">
+            <img src="images/screenshot_main.png" alt="screenshot_main" width="100%" height="auto" style="margin-top: 20px;max-width:100%;border-radius:12px;">
+          </div>
+          <div class="media-block" style="width:90%;max-width:900px;">
+            <h2>CSS style adjustment screenshot</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:flex-start;">
+              <div style="flex:1 1 320px;min-width:240px;max-width:420px;text-align:center;">
+                <img src="images/screenshot_css1.png" alt="screenshot_css1" width="100%" height="auto" style="margin-top: 20px;max-width:100%;border-radius:12px;">
+                <div style="margin-top:8px;font-size:1rem;color:#575655;">CSS 1</div>
+              </div>
+              <div style="flex:1 1 320px;min-width:240px;max-width:420px;text-align:center;">
+                <img src="images/screenshot_css2.png" alt="screenshot_css2" width="100%" height="auto" style="margin-top: 20px;max-width:100%;border-radius:12px;">
+                <div style="margin-top:8px;font-size:1rem;color:#575655;">CSS2</div>
+              </div>
+            </div>
+          </div>
+          <div class="media-block" style="width:90%;max-width:900px;">
+            <h2>JavaScript style adjustment screenshot</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:flex-start;">
+              <div style="flex:1 1 320px;min-width:240px;max-width:420px;text-align:center;">
+                <img src="images/js1.png" alt="screenshot_js1" width="100%" height="auto" style="margin-top: 20px;max-width:100%;border-radius:12px;">
+                <div style="margin-top:8px;font-size:1rem;color:#575655;">JS 1</div>
+              </div>
+              <div style="flex:1 1 320px;min-width:240px;max-width:420px;text-align:center;">
+                <img src="images/js2.png" alt="screenshot_js2" width="100%" height="auto" style="margin-top: 20px;max-width:100%;border-radius:12px;">
+                <div style="margin-top:8px;font-size:1rem;color:#575655;">JS 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="media-block" style="width:90%;max-width:900px;">
+            <h2>Challenging Part</h2>
+            <p style="text-align:left;">
+              One of the most challenging parts I encountered during the coding process was working with CSS and JavaScript. While the structure of the HTML was quite smooth for me to build, I struggled with CSS formatting at first. I was unfamiliar with many of the properties and how they affect the layout on a webpage. For example, something as simple as adjusting the position of a title took me several tries because I didn't yet understand how different positioning rules work.
+            </p>
+            <p style="text-align:left;">
+              When it came to JavaScript, things became even harder. I had no prior experience with it, and the initial lessons only covered basic concepts. I wanted to add a "Back to Top" button that smoothly scrolls the page to the top when clicked. At first, I tried using window.scrollTo(0,0), but it jumped to the top instantly. I learned I needed to use behavior: 'smooth' for smooth scrolling, so I wrote:
+            </p>
+            <pre style="background:#f7f3ee;padding:10px 16px;border-radius:8px;overflow-x:auto;">window.addEventListener('scroll', function(){});</pre>
+            <p style="text-align:left;">
+              However, this still didn't work because I forgot to add the event listener correctly. I continuously tested and reviewed the documentation until I realized that I needed to wrap it in a function and bind it to the button's click event. After debugging and trying, I finally achieved the functionality. This small feature helped me understand the interaction between JS functions and DOM events, and I was very proud to see it running successfully.
+            </p>
+          </div>
+          <div class="media-block" style="width:90%;max-width:900px;">
+            <h2>Developer tools usage</h2>
+            <p><b>JavaScript</b> <b>Html</b> <b>Css</b></p>
+          </div>
+          <div class="media-block" style="width:90%;max-width:900px;">
+            <h2>Written Reflection on My Web Development Process</h2>
+            <p style="text-align:left;">
+              Throughout the process of creating my website, I experienced both smooth progress and unexpected challenges. Structuring the page with HTML was relatively easy for me, as I quickly understood how to organize content using tags like &lt;header&gt;, &lt;section&gt;, and &lt;footer&gt;. The layout made sense, and building the framework gave me confidence early on.
+            </p>
+            <p style="text-align:left;">
+              However, things became more difficult when I started working with CSS and JavaScript. At the beginning, I struggled with CSS because I had little idea how properties like margin, padding, and position worked together. For example, it took me many attempts just to correctly position the page title. I had to try different combinations of relative, absolute, and flexbox before finally achieving the result I wanted. These challenges taught me the importance of precision and testing when working with stylesheets.
+            </p>
+            <p style="text-align:left;">
+              JavaScript was even more challenging. I had never used it before, and I realized quickly that the basics I learned weren't enough to create the interactive effects I wanted. One specific example was trying to make a "Back to Top" button with smooth scrolling. At first, I just used window.addEventListener('scroll', function(){});, but it made the page jump instantly. After research and trial-and-error, I learned to add behavior: 'smooth' for better user experience. I also had to learn how to use addEventListener properly to make the button work when clicked. Debugging this small feature was frustrating but rewarding—it was the first time I felt like I had real control over a webpage's behavior.
+            </p>
+            <p style="text-align:left;">
+              From this experience, I learned much more than just writing code. I gained a strong understanding of how websites are structured, how different languages play specific roles, and how to improve a site's appearance and functionality. I now see how small design choices, like spacing and animation, can greatly affect the overall user experience. I also learned to independently find solutions and break down problems into smaller steps, which is very helpful for future projects.
+            </p>
+            <p style="text-align:left;">
+              This project showed me that web development requires patience, creativity, and continuous learning. I'm proud of how far I've come from knowing nothing about JavaScript to writing my first working function. I look forward to continuing to improve my skills and building more advanced, interactive websites in the future.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- 页面加载动画遮罩 -->
     <div id="pageLoader">Loading...</div>
     <!-- 返回顶部按钮 -->
     <button id="backToTop" title="Back to Top">↑</button>
-    <div class="footer-row">
-      <button id="readAllBtn" title="Read the entire page content" aria-label="朗读全页内容">🔊</button>
-      <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
-    </div>
+    <footer class="site-footer">© 2025/5/21 GaryGu. All rights reserved.</footer>
   </body>
 </html>
