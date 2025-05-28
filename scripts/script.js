@@ -1,4 +1,4 @@
-// 页面加载动画
+// Page loading animation
 window.addEventListener('DOMContentLoaded', function() {
   // Page loading animation
   const loader = document.getElementById('pageLoader');
