@@ -162,7 +162,7 @@ window.addEventListener('DOMContentLoaded', function() {
         id: 'music-whiplash',
         img: 'images/boa.jpg',
         alt: 'boa',
-        video: '<iframe width="100%" height="340" src="https://www.youtube.com/embed/Bl6y_fiwOsE" title="Whiplash" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);"></iframe>'
+        video: '<iframe width="100%" height="340" src="https://www.youtube.com/embed/MM8RufZr5lw" title="Whiplash" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);"></iframe>'
       },
       {
         id: 'music-aliez',
