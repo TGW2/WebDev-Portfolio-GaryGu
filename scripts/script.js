@@ -184,17 +184,17 @@ window.addEventListener('DOMContentLoaded', function() {
       const img = block.querySelector('img');
       if (!img) return;
       img.onclick = function() {
-        // 先恢复所有为图片
+        // First, restore all to images
         musicData.forEach(other => {
           const otherBlock = document.getElementById(other.id);
           if (!otherBlock) return;
           if (!otherBlock.querySelector('img')) {
             otherBlock.innerHTML = `<img src="${other.img}" alt="${other.alt}" class="hero-img music-cover" style="display: block; margin: 0 auto; cursor:pointer;"><h2>${otherBlock.querySelector('h2').innerText}</h2>`;
-            // 重新绑定点击事件
+            // Re-bind click event
             bindMusicCoverClick(other);
           }
         });
-        // 当前替换为视频
+        // The current replacement is a video.
         if (item.video.startsWith('<iframe')) {
           block.innerHTML = `${item.video}<h2>${block.querySelector('h2').innerText}</h2>`;
         } else {
@@ -202,7 +202,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
       };
     }
-    // 初始绑定
+    // Initial Binding
     musicData.forEach(item => {
       bindMusicCoverClick(item);
     });

@@ -154,13 +154,13 @@ body {
   gap: 10px;
 }
 .intro-tag {
-  background: linear-gradient(90deg,#f7c873 0%,#f3ede7 100%);
+  background: #f7f3ee !important;
   color: #7a5c1b;
   font-size: 0.98rem;
   font-weight: 600;
   border-radius: 8px;
   padding: 4px 14px;
-  box-shadow: 0 1px 6px rgba(247,200,115,0.10);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
   letter-spacing: 1px;
 }
 .intro-text {
@@ -204,17 +204,17 @@ body {
   margin-bottom: 12px;
 }
 
-.button{
+.button {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-size: 18px;
   display: inline-block;
   padding: 12px 32px;
-  background: linear-gradient(90deg, #f7c873 0%, #f3ede7 100%);
+  background: #f7f3ee;
   color: #373737;
   text-decoration: none;
   border-radius: 8px;
   border: none;
-  box-shadow: 0 2px 8px rgba(247,200,115,0.12);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: background 0.3s, color 0.2s, transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   margin-top: 16px;
@@ -613,4 +613,15 @@ body {
 .toggle-btn:focus, .toggle-btn:hover {
   color: #a88b4a;
   transform: scale(1.2);
+}
+
+.section-box {
+  background: #f7f3ee !important;
+  color: #7a5c1b;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
