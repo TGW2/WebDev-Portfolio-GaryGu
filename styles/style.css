@@ -70,12 +70,6 @@ body {
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
   font-weight: 500;
 }
-.top_manu li a:hover, .top_manu li a.active {
-  background: linear-gradient(90deg, #f7c873 0%, #f3ede7 100%);
-  color: #222;
-  box-shadow: 0 2px 8px rgba(247,200,115,0.15);
-  transform: translateY(-2px) scale(1.06);
-}
 
 /* Leave the header height at the top of the main content. */
 .title, .box, .main-content {
@@ -227,10 +221,7 @@ body {
   font-weight: 600;
 }
 .button:hover {
-  background: linear-gradient(90deg, #f3ede7 0%, #f7c873 100%);
-  color: #222;
   transform: scale(1.05);
-  box-shadow: 0 4px 16px rgba(247,200,115,0.18);
 }
 
 .media-container {
@@ -255,7 +246,6 @@ body {
   position: relative;
 }
 .media-block:hover {
-  box-shadow: 0 8px 32px rgba(247,200,115,0.18);
   transform: translateY(-4px) scale(1.03);
   z-index: 2;
 }
@@ -278,7 +268,6 @@ body {
 }
 .media-block img:hover,
 .media-block embed:hover {
-  box-shadow: 0 8px 32px rgba(247,200,115,0.18);
   transform: scale(1.04);
 }
 
