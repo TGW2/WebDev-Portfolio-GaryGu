@@ -162,19 +162,19 @@ window.addEventListener('DOMContentLoaded', function() {
         id: 'music-whiplash',
         img: 'images/boa.jpg',
         alt: 'boa',
-        video: 'images/video/whiplash.mp4'
+        video: '<iframe width="100%" height="340" src="https://www.youtube.com/embed/Bl6y_fiwOsE" title="Whiplash" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);"></iframe>'
       },
       {
         id: 'music-aliez',
         img: 'images/aLiez.jpg',
         alt: 'aLiez',
-        video: 'images/video/aliez.mp4'
+        video: '<iframe width="100%" height="340" src="https://www.youtube.com/embed/24K4oZjv01I" title="aLIEz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);"></iframe>'
       },
       {
         id: 'music-bios',
         img: 'images/BIOS.jpg',
         alt: 'BIOS',
-        video: 'images/video/bios.mp4'
+        video: '<iframe width="100%" height="340" src="https://www.youtube.com/embed/UMCka_vXtL4" title="BIOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);"></iframe>'
       }
     ];
 
@@ -195,7 +195,11 @@ window.addEventListener('DOMContentLoaded', function() {
           }
         });
         // 当前替换为视频
-        block.innerHTML = `<video src="${item.video}" width="100%" height="340" style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);" controls autoplay></video><h2>${block.querySelector('h2').innerText}</h2>`;
+        if (item.video.startsWith('<iframe')) {
+          block.innerHTML = `${item.video}<h2>${block.querySelector('h2').innerText}</h2>`;
+        } else {
+          block.innerHTML = `<video src="${item.video}" width="100%" height="340" style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);" controls autoplay></video><h2>${block.querySelector('h2').innerText}</h2>`;
+        }
       };
     }
     // 初始绑定
