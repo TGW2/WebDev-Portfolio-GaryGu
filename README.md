@@ -11,7 +11,7 @@ This is my final project for a Web Development course, designed to showcase my s
 - **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
 - **Modular Structure**: Clear separation of HTML, CSS, and JS for easy maintenance.
 - **Accessibility Statement**: Commitment to WCAG 2.1 Level AA compliance.
-- **UN Global Goals Section**: A page dedicated to Goal 6 (Clean Water and Sanitation).
+- **UN Global Goals Section**: A page dedicated to Goal 16, Peace, Justice, and Strong Institutions.
 - **Design Thinking Process**: Explanation of how users were considered during the design.
 
 ---
