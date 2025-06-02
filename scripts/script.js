@@ -87,24 +87,24 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   // Portfolio Section Page Switch
-  const page1 = document.querySelector('.portfolio-page1');
-  const page2 = document.querySelector('.portfolio-page2');
-  const btnPrev = document.getElementById('portfolioPrev');
-  const btnNext = document.getElementById('portfolioNext');
-  if (page1 && page2 && btnPrev && btnNext) {
-    btnPrev.onclick = function() {
-      page1.style.display = '';
-      page2.style.display = 'none';
-      btnPrev.disabled = true;
-      btnNext.disabled = false;
-    };
-    btnNext.onclick = function() {
-      page1.style.display = 'none';
-      page2.style.display = '';
-      btnPrev.disabled = false;
-      btnNext.disabled = true;
-    };
-  }
+  // const page1 = document.querySelector('.portfolio-page1');
+  // const page2 = document.querySelector('.portfolio-page2');
+  // const btnPrev = document.getElementById('portfolioPrev');
+  // const btnNext = document.getElementById('portfolioNext');
+  // if (page1 && page2 && btnPrev && btnNext) {
+  //   btnPrev.onclick = function() {
+  //     page1.style.display = '';
+  //     page2.style.display = 'none';
+  //     btnPrev.disabled = true;
+  //     btnNext.disabled = false;
+  //   };
+  //   btnNext.onclick = function() {
+  //     page1.style.display = 'none';
+  //     page2.style.display = '';
+  //     btnPrev.disabled = false;
+  //     btnNext.disabled = true;
+  //   };
+  // }
 
   // Home page virtual character animation
   if (document.getElementById('raiden-anim')) {
