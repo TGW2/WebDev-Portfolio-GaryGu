@@ -1,12 +1,5 @@
-// Page loading animation
 window.addEventListener('DOMContentLoaded', function() {
-  // Page loading animation
-  const loader = document.getElementById('pageLoader');
-  if (loader) {
-    setTimeout(() => loader.classList.add('hide'), 200);
-    setTimeout(() => loader.remove(), 600);
-  }
-
+  
   // Back to Top button
   const backToTop = document.getElementById('backToTop');
   if (backToTop) {
