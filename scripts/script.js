@@ -215,5 +215,37 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Work & Hobby 卡片切换逻辑
+  const cardMedia = document.getElementById('card-media-design');
+  const cardFrisbee = document.getElementById('card-frisbee');
+  const cardMusic = document.getElementById('card-music');
+  const workHobbySection = document.getElementById('work-hobby-section');
+  const workHobbyContent = document.getElementById('work-hobby-content');
+  const detailMedia = document.getElementById('detail-media-design');
+  const detailFrisbee = document.getElementById('detail-frisbee');
+  const detailMusic = document.getElementById('detail-music');
+  function showDetail(detail) {
+    workHobbySection.style.display = 'none';
+    workHobbyContent.style.display = 'block';
+    detailMedia.style.display = 'none';
+    detailFrisbee.style.display = 'none';
+    detailMusic.style.display = 'none';
+    detail.style.display = 'block';
+    workHobbyContent.innerHTML = '';
+    workHobbyContent.appendChild(detail);
+  }
+  if(cardMedia) cardMedia.onclick = function(){ 
+    const el = document.getElementById('media-design');
+    if(el) el.scrollIntoView({behavior: 'smooth', block: 'center'});
+  };
+  if(cardFrisbee) cardFrisbee.onclick = function(){ 
+    const el = document.getElementById('frisbee');
+    if(el) el.scrollIntoView({behavior: 'smooth', block: 'center'});
+  };
+  if(cardMusic) cardMusic.onclick = function(){ 
+    const el = document.getElementById('music');
+    if(el) el.scrollIntoView({behavior: 'smooth', block: 'center'});
+  };
 });
 

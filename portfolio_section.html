@@ -21,44 +21,59 @@
 
     <div class="hero-section">
       <h1 class="hero-title" style="position:relative;z-index:1;">Portfolio Section</h1>
-      <button class="scroll-down-btn" onclick="document.getElementById('portfolio-content-section').scrollIntoView({behavior: 'smooth'});" style="z-index:1;">⇓</button>
+      <button class="scroll-down-btn" onclick="document.getElementById('work-hobby-section').scrollIntoView({behavior: 'smooth'});" style="z-index:1;">⇓</button>
     </div>
-    <div id="portfolio-content-section">
-    <div class="section-nav" style="padding-top: 100px;">
-        <a href="#media-design-title" class="section-box" id="btn-media-design" style="display: flex; align-items: center; justify-content: center; width: 160px; height: 60px; border-radius: 16px; box-shadow: 0 2px 8px rgba(247,200,115,0.12); font-size: 1.2rem; font-weight: 600; color: rgb(150,120,58); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Media Design</a>
-        <a href="#frisbee-title" class="section-box" id="btn-frisbee" style="display: flex; align-items: center; justify-content: center; width: 160px; height: 60px; border-radius: 16px;box-shadow: 0 2px 8px rgba(247,200,115,0.12); font-size: 1.2rem; font-weight: 600; color: rgb(150,120,58); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Frisbee</a>
-        <a href="#music-title" class="section-box" id="btn-music" style="display: flex; align-items: center; justify-content: center; width: 160px; height: 60px; border-radius: 16px; box-shadow: 0 2px 8px rgba(247,200,115,0.12); font-size: 1.2rem; font-weight: 600; color: rgb(150,120,58); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Music</a>
-      </div>
-    
-      <div id="main-content-section" class="content-section">
-        <div class="intro" id="media-design" style="text-align: center;">
-          <h2 class="hero-subtitle" id="media-design-title" style="text-align: center;">Media Design</h2>
-          <img src="images/media_design.jpg" alt="media design" class="hero-img" style="display: block; margin: 0 auto;">
-          <h3>Here's some works I worked for my company <b>Detroit City Football Club</b></h3>
+    <!-- <div id="above-work-hobby-section" class="above-content-section" style="text-align: center;">aaa</div> -->
+    <div id="work-hobby-section" class="content-section" style="margin-top: 50px;margin-bottom: 50px;">
+      <h2 class="work-hobby-title">Work & Hobby</h2>
+      <div class="work-hobby-underline"></div>
+      <div class="work-hobby-cards">
+        <div class="work-hobby-card" id="card-media-design">
+          <img src="images/media_design.jpg" alt="Media Design" class="work-hobby-img">
+          <div class="work-hobby-name">Media Design</div>
         </div>
-        <div class="media-container">
-          <div class="media-block">
-            <img src="images/icon.png" alt="logo">
-            <h3>Logo</h3>
-          </div>
-          <div class="media-block">
-            <embed src="images/poster.pdf" type="application/pdf">
-            <h3>Sample Poster</h3>
-          </div>
-          <div class="media-block">
-            <embed src="images/postcard.pdf" type="application/pdf">
-            <h3>Postcard</h3>
-          </div>
-          <div class="media-block">
-            <embed src="images/campaign.pdf" type="application/pdf">
-            <h3>Campaign Sample</h3>
-          </div>
+        <div class="work-hobby-card" id="card-frisbee">
+          <img src="images/frisbee.jpg" alt="Frisbee" class="work-hobby-img">
+          <div class="work-hobby-name">Frisbee</div>
+        </div>
+        <div class="work-hobby-card" id="card-music">
+          <img src="images/music_icon.jpg" alt="Music" class="work-hobby-img">
+          <div class="work-hobby-name">Music</div>
+        </div>
+      </div>
+    </div>
+    <div id="work-hobby-content" style="display:none;"></div>
+    <!-- Preserve the original content block, always display -->
+    <div id="main-content-section" class="content-section">
+      <div class="intro" id="media-design" style="text-align: center;">
+        <h2 class="hero-subtitle" id="media-design-title" >Media Design</h2>
+        <div class="work-hobby-detail-underline" style="margin: 0 auto 32px auto;"></div>
+        <img src="images/media_design.jpg" alt="media design" class="hero-img" style="display: block; margin: 0 auto;">
+        <h3>Here's some works I worked for my company <b>Detroit City Football Club</b></h3>
+      </div>
+      <div class="media-container">
+        <div class="media-block">
+          <img src="images/icon.png" alt="logo">
+          <h3>Logo</h3>
+        </div>
+        <div class="media-block">
+          <embed src="images/poster.pdf" type="application/pdf">
+          <h3>Sample Poster</h3>
+        </div>
+        <div class="media-block">
+          <embed src="images/postcard.pdf" type="application/pdf">
+          <h3>Postcard</h3>
+        </div>
+        <div class="media-block">
+          <embed src="images/campaign.pdf" type="application/pdf">
+          <h3>Campaign Sample</h3>
         </div>
       </div>
     </div>
     <div id="main-content-section" class="content-section" >
       <div class="intro" id="frisbee" style="text-align: center;">
-        <h2 class="hero-subtitle" id="frisbee-title" style="text-align: center;">Frisbee</h2>
+        <h2 class="hero-subtitle" id="frisbee-title" >Frisbee</h2>
+        <div class="work-hobby-detail-underline" style="margin: 0 auto 32px auto;"></div>
         <img src="images/frisbee.jpg" alt="frisbee" class="hero-img" style="display: block; margin: 0 auto;">
         <h3>After getting into high school, i starting to play feisbee. I's a fun sports.</h3>
       </div>
@@ -85,8 +100,9 @@
     </div>
     <div id="main-content-section" class="content-section" >
       <div class="intro" id="music" style="text-align: center;">
-        <h2 class="hero-subtitle" id="music-title" style="text-align: center;">Music</h2>
-        <img src="images/music_icon.jpg" alt="frisbee" class="hero-img" style="display: block; margin: 0 auto;">
+        <h2 class="hero-subtitle" id="music-title">Music</h2>
+        <div class="work-hobby-detail-underline" style="margin: 0 auto 32px auto;"></div>
+        <img src="images/music_icon.jpg" alt="music" class="hero-img" style="display: block; margin: 0 auto;">
         <h3>I like listening to music. Pop, Rock, Jazz music are my favorite.</h3>
       </div>
       <div class="media-container">
@@ -107,8 +123,6 @@
           <h2>BIOS</h2>
         </div>
       </div>
-    </div>
-
     </div>
 
     <!-- Back to Top button -->

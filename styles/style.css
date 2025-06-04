@@ -521,7 +521,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   background: rgba(255,255,255,0.95);
   border-radius: 24px;
   margin: 0 auto 32px auto;
@@ -624,4 +624,81 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.work-hobby-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #575655;
+  margin-bottom: 0;
+  margin-left: 8px;
+  margin-top: 0;
+  text-align: left;
+}
+.work-hobby-underline {
+  width: 120px;
+  height: 4px;
+  background: #f7c873;
+  border-radius: 2px;
+  margin-left: 8px;
+  margin-bottom: 32px;
+}
+.work-hobby-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 32px;
+}
+.work-hobby-card {
+  width: 220px;
+  height: 260px;
+  background: #f7f3ee;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.work-hobby-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.work-hobby-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.work-hobby-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7a5c1b;
+  width: 100%;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background: #f7f3ee;
+}
+.work-hobby-detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #575655;
+  margin-bottom: 0;
+  margin-left: 8px;
+  margin-top: 0;
+  text-align: left;
+}
+.work-hobby-detail-underline {
+  width: 120px;
+  height: 4px;
+  background: #f7c873;
+  border-radius: 2px;
+  margin-left: 8px;
+  margin-bottom: 32px;
 }
