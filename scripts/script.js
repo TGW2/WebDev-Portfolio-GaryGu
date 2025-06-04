@@ -11,14 +11,15 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     });
     backToTop.onclick = function() {
-      //Determine whether on the portfolio_section.html page
+      // 在 portfolio_section.html 页面时回到 content-section
       if (window.location.pathname.includes('portfolio_section.html')) {
-        const section = document.getElementById('portfolio-content-section');
+        const section = document.getElementById('work-hobby-section');
         if (section) {
           section.scrollIntoView({ behavior: 'smooth', block: 'start' });
           return;
         }
       }
+      // 其他页面直接回到顶部
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
   }
