@@ -24,12 +24,12 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   // Navigation highlight
-  const navLinks = document.querySelectorAll('.top_manu li a');
-  navLinks.forEach(link => {
-    if (window.location.href.includes(link.getAttribute('href'))) {
-      link.classList.add('active');
-    }
-  });
+  // const navLinks = document.querySelectorAll('.top_manu li a');
+  // navLinks.forEach(link => {
+  //   if (window.location.href.includes(link.getAttribute('href'))) {
+  //     link.classList.add('active');
+  //   }
+  // });
 
   // Global Read Button
   const readAllBtn = document.getElementById('readAllBtn');
