@@ -1,4 +1,4 @@
-# WebDev-Portfolio-GaryGu
+# WebDev-Portfolio
 
 ## 🎨 **Gary Gu's Web Development Portfolio Website**
 
