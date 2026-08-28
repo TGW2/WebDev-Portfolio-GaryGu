@@ -74,5 +74,5 @@ This is my final project for a Web Development course, designed to showcase my s
 
 For any questions, feedback, or collaboration inquiries, feel free to reach out:
 
-* 📧 Email: gtc13764688908@gmail.com
+* 📧 Email: wentao.gary.gu@gmail.com
 * 🌐 Website: [Here to visite my website](https://tgw2.github.io/WebDev-Portfolio-GaryGu/main.html)
